@@ -1,3 +1,1 @@
-# ThichTruyen
-
-Read book
+# Project RN Base
