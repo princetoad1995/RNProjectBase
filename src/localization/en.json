@@ -1,0 +1,25 @@
+{
+  "translation": {
+    "terms": "Term of Use",
+    "disclaimer": "Disclaimer",
+    "menu": "Menu",
+    "splash.title": "Fun, Interactive & Contextual English\nVocabulary Builder App",
+    "term.agree": "Agree",
+    "common.back": "Back",
+    "guide.start": "Get Started",
+    "lesson.score": "Score",
+    "lesson.unlock": "Unlock All Content",
+    "lesson.btn.unlock.title": "Unlock to continue!",
+    "lesson.read_along": "Read Along",
+    "lesson.count": "Count",
+    "lesson.find_object": "Find Object",
+    "lesson.days_trial": "{{day}} days left free trial",
+    "lesson.day_trial": "1 day left free trial",
+    "lesson.words": "{{quality}}+ words",
+    "lesson.show_mask": "Show Mask",
+    "lesson.hide_mask": "Hide Mask",
+    "unlock.not_now": "Not Now",
+    "unlock.buy_premium": "Buy Premium",
+    "unlock.restore": "Restore"
+  }
+}
