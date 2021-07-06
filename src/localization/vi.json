@@ -1,6 +1,8 @@
 {
-  "translation": {
-    "terms": "Term of Use",
-    "disclaimer": "Disclaimer"
+  "intro": {
+    "title1": "Powerful helper for co-living group financial management",
+    "title2": "Money control that helps you reduce cost and raise saving",
+    "title3": "Make report and auto-alarm for the next bill",
+    "signUpWithEmail": "Sign up with email"
   }
 }

@@ -19,7 +19,7 @@ const LoginScreen = () => {
   return (
     <View style={{ backgroundColor: 'red' }}>
       <TouchableOpacity onPress={handlePress}>
-        <Text>{t('unlock.buy_premium')}</Text>
+        <Text>ahihi</Text>
       </TouchableOpacity>
     </View>
   );

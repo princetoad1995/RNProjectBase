@@ -16,7 +16,7 @@ const compose = (contexts: [any, any][], children: ReactNode) =>
 const App = () => {
   useEffect(() => {
     setTimeout(() => {
-      SplashScreen.hide();
+      // SplashScreen.hide();
     }, 1000);
   }, []);
 

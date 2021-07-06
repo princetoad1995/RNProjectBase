@@ -12,8 +12,11 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		19C635015BDE4D7799E46731 /* IconMorphosis.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8A53B0233C6443B7AD110405 /* IconMorphosis.ttf */; };
 		679F95FF09CD1F33E58C80FC /* libPods-RNBase-RNBaseTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E682BE7C1184EDA60B12B3A5 /* libPods-RNBase-RNBaseTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		C7302D12AE1A456C91D88F53 /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2E9BC41D249E455C9B63B659 /* NotoSans-Regular.ttf */; };
+		E0910E59BE264AB38CAA1997 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EAD852E3F31B4C2980195A69 /* Poppins-Medium.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,13 +39,17 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = RNBase/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = RNBase/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = RNBase/main.m; sourceTree = "<group>"; };
+		2E9BC41D249E455C9B63B659 /* NotoSans-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSans-Regular.ttf"; path = "../src/assets/fonts/NotoSans-Regular.ttf"; sourceTree = "<group>"; };
 		43899967F4DF29A56B466F93 /* Pods-RNBase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNBase.release.xcconfig"; path = "Target Support Files/Pods-RNBase/Pods-RNBase.release.xcconfig"; sourceTree = "<group>"; };
 		4C526012E5EC12E32FBD2F1F /* libPods-RNBase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNBase.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		623B029E2FBF4E0D96AF4496 /* NotoSans-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSans-Bold.ttf"; path = "../src/assets/fonts/NotoSans-Bold.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = RNBase/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8A53B0233C6443B7AD110405 /* IconMorphosis.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = IconMorphosis.ttf; path = ../src/assets/fonts/IconMorphosis.ttf; sourceTree = "<group>"; };
 		9CEC909F4CA4857C16A1BEF5 /* Pods-RNBase-RNBaseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNBase-RNBaseTests.release.xcconfig"; path = "Target Support Files/Pods-RNBase-RNBaseTests/Pods-RNBase-RNBaseTests.release.xcconfig"; sourceTree = "<group>"; };
 		BB1D6857AC3F9E8861F0C17F /* Pods-RNBase-RNBaseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNBase-RNBaseTests.debug.xcconfig"; path = "Target Support Files/Pods-RNBase-RNBaseTests/Pods-RNBase-RNBaseTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CB8D0B54D083455C2376961F /* Pods-RNBase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNBase.debug.xcconfig"; path = "Target Support Files/Pods-RNBase/Pods-RNBase.debug.xcconfig"; sourceTree = "<group>"; };
 		E682BE7C1184EDA60B12B3A5 /* libPods-RNBase-RNBaseTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNBase-RNBaseTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAD852E3F31B4C2980195A69 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Medium.ttf"; path = "../src/assets/fonts/Poppins-Medium.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -91,7 +98,6 @@
 				BB1D6857AC3F9E8861F0C17F /* Pods-RNBase-RNBaseTests.debug.xcconfig */,
 				9CEC909F4CA4857C16A1BEF5 /* Pods-RNBase-RNBaseTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -118,6 +124,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		51C135DC81874E33BE644E92 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EAD852E3F31B4C2980195A69 /* Poppins-Medium.ttf */,
+				8A53B0233C6443B7AD110405 /* IconMorphosis.ttf */,
+				623B029E2FBF4E0D96AF4496 /* NotoSans-Bold.ttf */,
+				2E9BC41D249E455C9B63B659 /* NotoSans-Regular.ttf */,
+			);
+			name = Resources;
+			path = "";
+			sourceTree = "<group>";
+		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +152,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				0A18C24B16EB473299E0FFCF /* Pods */,
+				51C135DC81874E33BE644E92 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -245,6 +264,9 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				E0910E59BE264AB38CAA1997 /* Poppins-Medium.ttf in Resources */,
+				19C635015BDE4D7799E46731 /* IconMorphosis.ttf in Resources */,
+				C7302D12AE1A456C91D88F53 /* NotoSans-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
