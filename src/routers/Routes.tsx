@@ -1,5 +1,5 @@
 import { AuthContext } from '@/contexts';
-import { getSInfoItem, LOGGED } from '@/utils';
+import { getStore, LOGGED } from '@/utils';
 import { createStackNavigator } from '@react-navigation/stack';
 import React, { useContext, useEffect, useState } from 'react';
 import { View, StyleSheet } from 'react-native';
@@ -14,7 +14,7 @@ const Routes = () => {
   const authContext = useContext(AuthContext);
 
   useEffect(() => {
-    getSInfoItem(LOGGED).then((result: string | undefined) => {
+    getStore(LOGGED).then((result: string | undefined) => {
       setLoading(false);
       authContext.dispatch({
         type: 'UPDATE_LOGGED',
