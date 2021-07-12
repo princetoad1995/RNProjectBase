@@ -10,10 +10,9 @@ export const useStyleButton = () => {
       StyleSheet.create({
         container: {
           alignItems: 'center',
-          padding: Platform.SizeScale(12),
+          padding: Platform.SizeScale(9),
           justifyContent: 'center',
-          height: Platform.SizeScale(48),
-          borderRadius: Platform.SizeScale(24),
+          borderRadius: Platform.SizeScale(5),
           flexDirection: 'row',
         },
         icon: {
@@ -24,14 +23,14 @@ export const useStyleButton = () => {
         text: {
           textAlign: 'center',
         },
-        lightGray: {
-          backgroundColor: colors.lightGray,
+        primary: {
+          backgroundColor: colors.primary,
         },
-        mandy: {
-          backgroundColor: colors.mandy,
+        white: {
+          backgroundColor: colors.white,
         },
-        grey: {
-          backgroundColor: colors.grey,
+        gray: {
+          backgroundColor: colors.gray,
         },
       }),
     [colors],

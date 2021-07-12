@@ -1,5 +1,5 @@
 export enum BUTTON_STYLES {
-  LIGHT_GRAY = 'LIGHT_GRAY',
-  MANDY = 'MANDY',
-  GREY = 'GREY',
+  PRIMARY = 'PRIMARY',
+  WHITE = 'WHITE',
+  GRAY = 'GRAY',
 }

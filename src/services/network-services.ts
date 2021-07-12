@@ -1,4 +1,5 @@
 import { IHeader } from '@/models';
+import { IResponseError } from './type';
 
 const axios = require('axios');
 
@@ -31,17 +32,37 @@ function post<IRequest, IResponse>(endpoint: string, params: IRequest) {
     .post(endpoint, params, {
       headers: HEADERS,
       timeout: TIMEOUT,
+      validateStatus: (status: number) =>
+        status === 200 ||
+        status === 201 ||
+        status === 400 ||
+        status === 401 ||
+        status === 403 ||
+        status === 404 ||
+        status === 500,
     })
     .then(
       (response: IResponse) => {
         return response;
       },
-      (err: any) => {
-        return err;
+      () => {
+        const requestError: IResponseError = {
+          status: 0,
+          data: {
+            message: 'Have error',
+          },
+        };
+        return requestError;
       },
     )
-    .catch((err: any) => {
-      return err;
+    .catch(() => {
+      const requestError: IResponseError = {
+        status: 0,
+        data: {
+          message: 'Have error',
+        },
+      };
+      return requestError;
     });
 }
 
@@ -52,17 +73,37 @@ function get<IRequest, IResponse>(endpoint: string, params: IRequest) {
       params: params,
       headers: HEADERS,
       timeout: TIMEOUT,
+      validateStatus: (status: number) =>
+        status === 200 ||
+        status === 201 ||
+        status === 400 ||
+        status === 401 ||
+        status === 403 ||
+        status === 404 ||
+        status === 500,
     })
     .then(
       (response: IResponse) => {
         return response;
       },
-      (err: any) => {
-        return err;
+      () => {
+        const requestError: IResponseError = {
+          status: 0,
+          data: {
+            message: 'Have error',
+          },
+        };
+        return requestError;
       },
     )
-    .catch((err: any) => {
-      return err;
+    .catch(() => {
+      const requestError: IResponseError = {
+        status: 0,
+        data: {
+          message: 'Have error',
+        },
+      };
+      return requestError;
     });
 }
 
@@ -72,17 +113,37 @@ function put<IRequest, IResponse>(endpoint: string, params: IRequest) {
     .put(endpoint, params, {
       headers: HEADERS,
       timeout: TIMEOUT,
+      validateStatus: (status: number) =>
+        status === 200 ||
+        status === 201 ||
+        status === 400 ||
+        status === 401 ||
+        status === 403 ||
+        status === 404 ||
+        status === 500,
     })
     .then(
       (response: IResponse) => {
         return response;
       },
-      (err: any) => {
-        return err;
+      () => {
+        const requestError: IResponseError = {
+          status: 0,
+          data: {
+            message: 'Have error',
+          },
+        };
+        return requestError;
       },
     )
-    .catch((err: any) => {
-      return err;
+    .catch(() => {
+      const requestError: IResponseError = {
+        status: 0,
+        data: {
+          message: 'Have error',
+        },
+      };
+      return requestError;
     });
 }
 
@@ -94,18 +155,36 @@ function apiDelete<IRequest, IResponse>(endpoint: string, params: IRequest) {
       headers: HEADERS,
       timeout: TIMEOUT,
       validateStatus: (status: number) =>
-        status === 200 || status === 400 || status === 500,
+        status === 200 ||
+        status === 201 ||
+        status === 400 ||
+        status === 401 ||
+        status === 403 ||
+        status === 404 ||
+        status === 500,
     })
     .then(
       (response: IResponse) => {
         return response;
       },
-      (err: any) => {
-        return err;
+      () => {
+        const requestError: IResponseError = {
+          status: 0,
+          data: {
+            message: 'Have error',
+          },
+        };
+        return requestError;
       },
     )
-    .catch((err: any) => {
-      return err;
+    .catch(() => {
+      const requestError: IResponseError = {
+        status: 0,
+        data: {
+          message: 'Have error',
+        },
+      };
+      return requestError;
     });
 }
 

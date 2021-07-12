@@ -12,16 +12,39 @@ export const useStyleIntro = () => {
           flex: 1,
         },
         imgSlider: {
-          width: Platform.SizeScale(249),
-          height: Platform.SizeScale(288),
+          width: Platform.deviceWidth * 0.75,
+          height: Platform.deviceHeight * 0.35,
         },
         wrapper: {
           alignItems: 'center',
         },
         sliderTitle: {
           color: colors.black,
-          marginTop: Platform.SizeScale(20),
+          marginTop: Platform.SizeScale(10),
           marginHorizontal: Platform.SizeScale(30),
+        },
+        btnSignUpEmail: {
+          marginHorizontal: Platform.SizeScale(50),
+        },
+        containerSocialBtn: {
+          flexDirection: 'row',
+          width: Platform.SizeScale(180),
+          alignSelf: 'center',
+          justifyContent: 'space-between',
+        },
+        imgSocial: {
+          width: Platform.SizeScale(44),
+          height: Platform.SizeScale(44),
+        },
+        alreadyAccountTitle: {
+          textAlign: 'center',
+        },
+        signInTitle: {
+          color: colors.primary,
+        },
+        containerButton: {
+          height: Platform.deviceHeight * 0.3,
+          justifyContent: 'space-around',
         },
       }),
     [colors],

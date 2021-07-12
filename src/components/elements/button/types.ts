@@ -1,6 +1,5 @@
 import { TextStyle, ViewStyle } from 'react-native';
-import { DefaultTheme } from '@/theme';
-import { FONT_TYPES } from '../text-field/constants';
+import { DefaultTheme, FontSize, FontWeight, FONT_TYPES } from '@/theme';
 import { BUTTON_STYLES } from './constants';
 
 export type ButtonProps = {
@@ -16,4 +15,6 @@ export type ButtonProps = {
   disabled?: boolean;
   labelColor?: keyof typeof DefaultTheme.colors;
   indicatorColor?: keyof typeof DefaultTheme.colors;
+  textSize?: FontSize;
+  fontWeight?: FontWeight;
 };

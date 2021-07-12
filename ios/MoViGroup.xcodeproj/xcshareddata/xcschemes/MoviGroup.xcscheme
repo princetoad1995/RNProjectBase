@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "RNBase.app"
-               BlueprintName = "RNBase"
-               ReferencedContainer = "container:RNBase.xcodeproj">
+               BuildableName = "MoViGroup.app"
+               BlueprintName = "MoViGroup"
+               ReferencedContainer = "container:MoViGroup.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "RNBase.app"
-            BlueprintName = "RNBase"
-            ReferencedContainer = "container:RNBase.xcodeproj">
+            BuildableName = "MoViGroup.app"
+            BlueprintName = "MoViGroup"
+            ReferencedContainer = "container:MoViGroup.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "RNBase.app"
-            BlueprintName = "RNBase"
-            ReferencedContainer = "container:RNBase.xcodeproj">
+            BuildableName = "MoViGroup.app"
+            BlueprintName = "MoViGroup"
+            ReferencedContainer = "container:MoViGroup.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

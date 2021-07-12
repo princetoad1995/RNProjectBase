@@ -7,6 +7,7 @@ export enum FONT_TYPES {
 }
 
 export type FontSize = 'm4' | 'm3' | 'm2' | 'm1';
+export type FontWeight = '700' | '400';
 
 export const fontSizeMap: { [key in FontSize]: number } = {
   m4: Platform.SizeScale(25),

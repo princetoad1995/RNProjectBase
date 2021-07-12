@@ -1,8 +1,7 @@
+import { fontSizeMap, FONT_TYPES, useTheme } from '@/theme';
 import React, { useMemo } from 'react';
-import { Image, TextStyle } from 'react-native';
-import { Platform } from '@/theme';
+import { Image, TextStyle, Text } from 'react-native';
 import { Indicator } from '../indicator';
-import { Text } from '../text';
 import { Touchable } from '../touchable';
 import { BUTTON_STYLES } from './constants';
 import { useStyleButton } from './styles';
@@ -12,7 +11,7 @@ export const Button = ({
   label,
   style,
   buttonStyle,
-  fontType = 'INTER',
+  fontType = 'NOTOSANS_BOLD',
   icon,
   isLoading,
   onPress,
@@ -20,23 +19,26 @@ export const Button = ({
   indicatorColor = 'white',
   disabled,
   labelStyle = {},
+  textSize = 'm1',
+  fontWeight = '700',
 }: ButtonProps) => {
   const { styles, colors } = useStyleButton();
+  const { typography } = useTheme();
 
   const getContainerStyle = useMemo(() => {
     let containerStyle = {};
     switch (buttonStyle) {
-      case BUTTON_STYLES.LIGHT_GRAY:
-        containerStyle = styles.lightGray;
+      case BUTTON_STYLES.PRIMARY:
+        containerStyle = styles.primary;
         break;
-      case BUTTON_STYLES.MANDY:
-        containerStyle = styles.mandy;
+      case BUTTON_STYLES.WHITE:
+        containerStyle = styles.white;
         break;
-      case BUTTON_STYLES.GREY:
-        containerStyle = styles.grey;
+      case BUTTON_STYLES.GRAY:
+        containerStyle = styles.gray;
         break;
       default:
-        containerStyle = styles.mandy;
+        containerStyle = styles.primary;
     }
 
     return [styles.container, containerStyle, style];
@@ -45,9 +47,8 @@ export const Button = ({
   const getTextStyle = useMemo<TextStyle[]>(() => {
     let color;
     switch (buttonStyle) {
-      case BUTTON_STYLES.LIGHT_GRAY:
-      case BUTTON_STYLES.GREY:
-        color = colors.black;
+      case BUTTON_STYLES.WHITE:
+        color = colors.primary;
         break;
       default:
         color = colors.white;
@@ -59,13 +60,29 @@ export const Button = ({
     }
 
     return [
+      typography[FONT_TYPES[fontType]],
       { color },
       !icon
-        ? { flex: 1, textAlign: 'center', fontSize: Platform.SizeScale(20) }
+        ? {
+            flex: 1,
+            textAlign: 'center',
+            fontSize: fontSizeMap[textSize],
+            fontWeight,
+          }
         : {},
       labelStyle,
     ];
-  }, [buttonStyle, labelColor, icon, labelStyle, colors.black, colors.white]);
+  }, [
+    buttonStyle,
+    labelColor,
+    icon,
+    labelStyle,
+    colors,
+    textSize,
+    fontWeight,
+    typography,
+    fontType,
+  ]);
 
   return (
     <Touchable
@@ -73,9 +90,7 @@ export const Button = ({
       style={getContainerStyle}
       onPress={onPress}>
       {icon && <Image style={styles.icon} source={icon} />}
-      <Text fontType={fontType} style={getTextStyle}>
-        {label}
-      </Text>
+      <Text style={getTextStyle}>{label}</Text>
       {isLoading && <Indicator indicatorColor={indicatorColor} />}
     </Touchable>
   );

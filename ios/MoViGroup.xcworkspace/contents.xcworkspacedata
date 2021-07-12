@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:/Volumes/Data/Project/Mobile/ReactNative/movi-project/new-movi/movi-group/ios/MoViGroup.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:MoViGroup.xcodeproj">
+   </FileRef>
+</Workspace>

@@ -37,7 +37,7 @@ export const DefaultTheme = {
       color: COLORS.GRAY,
     },
     notosansRegular: {
-      fontFamily: 'NotoSans-Regular',
+      fontFamily: 'NotoSansKannada-Regular',
       fontSize: Platform.SizeScale(),
       color: COLORS.GRAY,
     },
