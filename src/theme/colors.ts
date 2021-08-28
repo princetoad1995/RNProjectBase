@@ -1,16 +1,5 @@
 export enum COLORS {
   WHITE = '#FFFFFF',
-  BLACK = '#0A0A10',
-  GRAY = '#C6C9D1',
-  LIGHT = '#F8F9FD',
-  OFF_WHITE = '#FCFCFC',
-  PRIMARY = '#394C75',
-  SUB_PRIMARY = '#99B1E7',
-  SECONDARY = '#FF5860',
-  SUB_SECONDARY = '#FFAAAE',
-  LINK = '#1F87FF',
-  SUCCESS = '#60C1B6',
-  WARNING = '#FFE059',
-  ERROR = '#DA3842',
-  JAVA = '#13B4D4',
+  BLACK = '#333333',
+  RED = '#FF3F3F',
 }

@@ -1,5 +1,4 @@
 import { AuthContext } from '@/contexts';
-import { setToken } from '@/services/network-services';
 import { getSInfoItem, LOGGED } from '@/utils';
 import { createStackNavigator } from '@react-navigation/stack';
 import React, { useContext, useEffect, useState } from 'react';
@@ -17,9 +16,6 @@ const Routes = () => {
   useEffect(() => {
     getSInfoItem(LOGGED).then((result: string | undefined) => {
       setLoading(false);
-      if (result) {
-        setToken(result);
-      }
       authContext.dispatch({
         type: 'UPDATE_LOGGED',
         logged: !!result,

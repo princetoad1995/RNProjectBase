@@ -1,3 +1,4 @@
+import { COLORS } from './colors';
 import { Platform } from './platform';
 
 export enum FONT_TYPES {
@@ -6,12 +7,20 @@ export enum FONT_TYPES {
   POPPINS_MEDIUM = 'poppinsMedium',
 }
 
-export type FontSize = 'm4' | 'm3' | 'm2' | 'm1';
+export type FontSize = 's26' | 's25' | 's20' | 's17' | 's13' | 's11';
 export type FontWeight = '700' | '400';
+export type FontColor = 'white' | 'black';
 
 export const fontSizeMap: { [key in FontSize]: number } = {
-  m4: Platform.SizeScale(25),
-  m3: Platform.SizeScale(17),
-  m2: Platform.SizeScale(13),
-  m1: Platform.SizeScale(11),
+  s26: Platform.SizeScale(26),
+  s25: Platform.SizeScale(25),
+  s20: Platform.SizeScale(20),
+  s17: Platform.SizeScale(17),
+  s13: Platform.SizeScale(13),
+  s11: Platform.SizeScale(11),
+};
+
+export const fontColorMap: { [key in FontColor]: string } = {
+  white: COLORS.WHITE,
+  black: COLORS.BLACK,
 };

@@ -1,11 +1,10 @@
 import { memo, MemoExoticComponent } from 'react';
 import { createIconSetFromIcoMoon } from 'react-native-vector-icons';
 import { ICONS } from './constants';
-import icoMoonConfig from './selection.json';
 const IconMorphosisBase = createIconSetFromIcoMoon(
-  icoMoonConfig,
-  'icomoon',
-  'icomoon.ttf',
+  require('./selection.json'),
+  'IconMorphosis',
+  'IconMorphosis.ttf',
 );
 
 export const IconMorphosis = memo(IconMorphosisBase) as MemoExoticComponent<

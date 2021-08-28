@@ -1,5 +1,5 @@
 import { NavigationContainer } from '@react-navigation/native';
-import React, { ReactNode, useEffect } from 'react';
+import React, { ReactNode, useEffect, Suspense } from 'react';
 import { SafeAreaView, StatusBar, StyleSheet } from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import SplashScreen from 'react-native-splash-screen';
@@ -28,9 +28,11 @@ const App = () => {
     <>
       <StatusBar barStyle="light-content" />
       <SafeAreaView style={styles.container}>
-        <NavigationContainer>
-          <Routes />
-        </NavigationContainer>
+        <Suspense fallback="loading">
+          <NavigationContainer>
+            <Routes />
+          </NavigationContainer>
+        </Suspense>
       </SafeAreaView>
     </>,
   );

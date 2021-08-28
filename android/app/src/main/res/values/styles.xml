@@ -7,6 +7,5 @@
     </style>
     <style name="SplashScreenTheme" parent="SplashScreen_SplashTheme">
         <item name="colorPrimaryDark">@color/status_bar_color</item>
-        <item name="android:fontFamily">@</item>
     </style>
 </resources>

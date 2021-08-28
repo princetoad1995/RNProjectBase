@@ -1,6 +1,6 @@
 export * from './platform';
 export * from './default-theme';
 export * from './colors';
-export * from './font';
 export * from './use-theme';
 export * from './theme-provider';
+export * from './font';
